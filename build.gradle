@@ -1,0 +1,39 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.5.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.selcukc'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile(
+			'org.springframework.boot:spring-boot-starter-data-mongodb',
+			'org.springframework.boot:spring-boot-starter-web',
+			'org.mongojack:mongojack:2.6.1',
+			'com.google.guava:guava:19.+',
+			'org.apache.commons:commons-collections4:4.1',
+			'org.apache.commons:commons-lang3:3.4',
+			'commons-validator:commons-validator:1.6',
+			'joda-time:joda-time:2.+'
+	)
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
