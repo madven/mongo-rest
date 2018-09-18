@@ -5,9 +5,9 @@ import com.google.common.base.Strings;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import com.mongodb.BasicDBObject;
-import com.selcukc.mongo_rest.repositories.UserStats;
-import com.selcukc.mongo_rest.repositories.storable.User;
-import com.selcukc.mongo_rest.repositories.storable.User.DetailTypes;
+import com.selcukc.mongo_rest.models.UserStats;
+import com.selcukc.mongo_rest.models.storable.User;
+import com.selcukc.mongo_rest.models.storable.User.DetailTypes;
 import org.joda.time.DateTime;
 import org.mongojack.DBQuery;
 import org.springframework.ui.Model;
@@ -18,7 +18,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.regex.Pattern;
 
-import static com.selcukc.mongo_rest.repositories.storable.User.DetailTypes.LATEST_SUBMISSION;
+import static com.selcukc.mongo_rest.models.storable.User.DetailTypes.LATEST_SUBMISSION;
 
 public class AdminHelper extends DashBaseHelper {
     private static final int MAX_RESULTS = 200;

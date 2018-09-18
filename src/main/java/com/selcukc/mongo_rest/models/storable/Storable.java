@@ -1,4 +1,4 @@
-package com.selcukc.mongo_rest.repositories.storable;
+package com.selcukc.mongo_rest.models.storable;
 
 import java.lang.annotation.*;
 

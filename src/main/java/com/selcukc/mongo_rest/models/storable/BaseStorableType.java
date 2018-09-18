@@ -1,4 +1,4 @@
-package com.selcukc.mongo_rest.repositories.storable;
+package com.selcukc.mongo_rest.models.storable;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

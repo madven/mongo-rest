@@ -1,7 +1,7 @@
 package com.selcukc.mongo_rest.dao;
 
 import com.mongodb.DBObject;
-import com.selcukc.mongo_rest.repositories.storable.StorableType;
+import com.selcukc.mongo_rest.models.storable.StorableType;
 
 /**
  * Interface for wrapper for transactions between the underlying datastore and

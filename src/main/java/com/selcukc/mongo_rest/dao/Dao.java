@@ -1,7 +1,7 @@
 package com.selcukc.mongo_rest.dao;
 
 import com.mongodb.DBObject;
-import com.selcukc.mongo_rest.repositories.storable.StorableType;
+import com.selcukc.mongo_rest.models.storable.StorableType;
 
 import java.util.List;
 import java.util.Optional;

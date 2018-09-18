@@ -1,4 +1,4 @@
-package com.selcukc.mongo_rest.repositories;
+package com.selcukc.mongo_rest.models;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;

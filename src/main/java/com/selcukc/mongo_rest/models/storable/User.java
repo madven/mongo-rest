@@ -1,4 +1,4 @@
-package com.selcukc.mongo_rest.repositories.storable;
+package com.selcukc.mongo_rest.models.storable;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -13,7 +13,7 @@ import org.mongojack.DBQuery;
 
 import java.util.*;
 
-import static com.selcukc.mongo_rest.repositories.storable.User.UserType.*;
+import static com.selcukc.mongo_rest.models.storable.User.UserType.*;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonDeserialize(builder = User.Builder.class)

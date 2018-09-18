@@ -2,7 +2,7 @@ package com.selcukc.mongo_rest.dao;
 
 import com.mongodb.DBObject;
 import com.mongodb.MongoException;
-import com.selcukc.mongo_rest.repositories.storable.StorableType;
+import com.selcukc.mongo_rest.models.storable.StorableType;
 import org.mongojack.DBCursor;
 import org.mongojack.JacksonDBCollection;
 
