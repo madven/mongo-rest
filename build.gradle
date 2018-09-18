@@ -28,12 +28,7 @@ dependencies {
 	compile(
 			'org.springframework.boot:spring-boot-starter-data-mongodb',
 			'org.springframework.boot:spring-boot-starter-web',
-			'org.mongojack:mongojack:2.6.1',
-			'com.google.guava:guava:19.+',
-			'org.apache.commons:commons-collections4:4.1',
-			'org.apache.commons:commons-lang3:3.4',
-			'commons-validator:commons-validator:1.6',
-			'joda-time:joda-time:2.+'
+			'com.google.guava:guava:19.+'
 	)
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
