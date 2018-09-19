@@ -1,5 +1,6 @@
 package com.selcukc.mongo_rest.controllers;
 
+import com.selcukc.mongo_rest.exceptions.UserNotFoundException;
 import com.selcukc.mongo_rest.models.UserEntity;
 import com.selcukc.mongo_rest.repositories.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @RestController
@@ -23,8 +23,8 @@ public class UserController {
 	}
 
 	@GetMapping(value = "/{id}")
-	public Optional<UserEntity> getUserById(@PathVariable("id") String id) {
-		return repository.findById(id);
+	public UserEntity getUserById(@PathVariable("id") String id) {
+		return repository.findById(id).orElseThrow(() -> new UserNotFoundException(id));
 	}
 
 	@PutMapping(value = "/{id}")
