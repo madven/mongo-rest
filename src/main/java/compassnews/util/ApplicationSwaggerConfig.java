@@ -12,15 +12,9 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-/**
- * Java config for Springfox swagger documentation plugin
- *
- * @author Vitaliy Fedoriv
- */
-
 @Configuration
 @EnableSwagger2
-@ComponentScan(basePackages = "com.selcukc.mongo_rest.controllers")
+@ComponentScan(basePackages = "compassnews.controllers")
 public class ApplicationSwaggerConfig {
 
 	@Bean
@@ -38,7 +32,7 @@ public class ApplicationSwaggerConfig {
 				.title("Admin Dashboard backend Api Documentation")
 				.description("This is REST API documentation of the Admin Dashboard backend.")
 				.version("1.0")
-				.contact(new Contact("Selcuk",
+				.contact(new Contact("Compassnews",
 						"https://github.com/compass-news/Service/tree/master/java/services",
 						"selcuk@compassnews.co.uk"))
 				.build();
