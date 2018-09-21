@@ -1,4 +1,4 @@
-package com.selcukc.mongo_rest;
+package compassnews;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.selcukc.mongo_rest.exceptions;
+package compassnews.exceptions;
 
 public class UserNotFoundException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.selcukc.mongo_rest.models;
+package compassnews.models;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;

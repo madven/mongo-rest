@@ -1,4 +1,4 @@
-package com.selcukc.mongo_rest;
+package compassnews;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

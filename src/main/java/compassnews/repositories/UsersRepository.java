@@ -1,8 +1,10 @@
-package com.selcukc.mongo_rest.repositories;
+package compassnews.repositories;
 
-import com.selcukc.mongo_rest.models.UserEntity;
+import compassnews.models.UserEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
+import java.util.List;
+
 public interface UsersRepository extends MongoRepository<UserEntity, String> {
-//	UserEntity findBy_id(String _id);
+	List<UserEntity> findByUsername(String username);
 }

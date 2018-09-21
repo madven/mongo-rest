@@ -1,6 +1,5 @@
-package com.selcukc.mongo_rest.advices;
+package compassnews.exceptions;
 
-import com.selcukc.mongo_rest.exceptions.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
