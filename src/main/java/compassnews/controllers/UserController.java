@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/user")
 public class UserController {
 
 	@Autowired
@@ -25,12 +25,12 @@ public class UserController {
 	private MongoTemplate mongoTemplate;
 
 	@GetMapping(value = "/")
-	public List<UserEntity> getAllUserEntity() {
+	public List<UserEntity> getAllUsers() {
 		return repository.findAll();
 	}
 
-	@GetMapping(value = "/search")
-	public List<UserEntity> searchUserEntity(
+	@PostMapping(value = "/_search")
+	public List<UserEntity> searchUser(
 			@RequestParam(value = "type", required = false) final String type,
 			@RequestParam(value = "platform", required = false) final String platform,
 			@RequestParam(value = "validated", required = false) final Boolean validated,
