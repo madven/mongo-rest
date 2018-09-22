@@ -3,8 +3,9 @@ package compassnews.repositories;
 import compassnews.models.UserEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.List;
+import java.util.Optional;
 
 public interface UsersRepository extends MongoRepository<UserEntity, String> {
-	List<UserEntity> findByUsername(String username);
+	Optional<UserEntity> findBy_id(String _id);
+//	List<UserEntity> findByUsername(String username);
 }

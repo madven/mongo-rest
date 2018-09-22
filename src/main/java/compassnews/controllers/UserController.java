@@ -54,7 +54,8 @@ public class UserController {
 
 	@GetMapping(value = "/{id}")
 	public UserEntity getUserById(@PathVariable("id") String id) {
-		return repository.findById(id).orElseThrow(() -> new UserNotFoundException(id));
+//		return repository.findById(id).orElseThrow(() -> new UserNotFoundException(id));
+		return repository.findBy_id(id).orElseThrow(() -> new UserNotFoundException(id));
 	}
 
 	@PutMapping(value = "/{id}")
@@ -71,7 +72,10 @@ public class UserController {
 
 	@DeleteMapping(value = "/{id}")
 	public void deleteUser(@PathVariable String id) {
-		repository.deleteById(id);
+//		repository.deleteById(id);
+		UserEntity userEntity = repository.findBy_id(id).orElseThrow(() -> new UserNotFoundException(id));
+		repository.delete(userEntity);
+
 	}
 
 }
